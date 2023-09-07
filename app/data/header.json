@@ -1,0 +1,31 @@
+{
+    "logo": "SpaceTraders UI",
+    "loggedOut": [
+                    {
+                        "title": "Text1",
+                        "url": "/url"
+                    },
+                    {
+                        "title": "Text2",
+                        "url": "/url"
+                    },
+                    {
+                        "title": "Text3",
+                        "url": "/url"
+                    }
+                ],
+    "loggedIn": [
+                    {
+                        "title": "Text1",
+                        "url": "/url"
+                    },
+                    {
+                        "title": "Text2",
+                        "url": "/url"
+                    },
+                    {
+                        "title": "Text3",
+                        "url": "/url"
+                    }
+                ]
+}
