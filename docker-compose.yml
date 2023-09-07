@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  web:
+    build:
+      context: ./app
+    command: sh -c "yarn run dev"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://myuser:mypassword@db:5432/mydatabase
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+  db:
+    build:
+      context: ./db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:
